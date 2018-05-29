@@ -1,6 +1,57 @@
-<head></head>
+<head>
+  <style>
+    body {
+  font: 14px Arial, sans-serif;
+  margin: 0;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Required in parents above an overflow:auto element */
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; /* Required in parents above an overflow:auto element */
+}
+
+.fill {
+  flex: 1;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.space > * {
+  margin-bottom: 10px;
+}
+
+.hbox.space > * {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.space > *:last-child {
+  margin: 0;
+}
+
+.scroll {
+  overflow: auto;
+}
+  </style>
+</head>
 <body>
 <h1>
-hello world
+Alzheimer's Disease
 </h1>
+  <h2></h2>
 </body>
